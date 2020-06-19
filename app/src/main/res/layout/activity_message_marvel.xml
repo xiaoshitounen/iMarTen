@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MessageActivity"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/poster"
+            android:id="@+id/name_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            >
+
+            <TextView
+                android:id="@+id/role_e_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IronMan"
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/role_c_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="钢铁侠"
+                android:textSize="18sp"
+                android:textColor="#999999"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/name_message"
+            android:id="@+id/role_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/actor_e_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="演员真实名称"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="演员英文名称"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/actor_c_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="演员真实名称"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="演员中文名称"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/role_message"
+            android:text="概述"
+            android:layout_marginStart="10dp"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+
+                <include
+                    layout="@layout/circle_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="钢铁侠（Iron Man）是美国漫威漫画公司旗下的超级英雄，初次登场于《悬疑故事》第39期（1963年3月），由斯坦·李、赖瑞·理柏、唐·赫克和杰克·科比联合创造。全名安东尼·爱德华·“托尼”·斯塔克（Anthony Edward 'Tony' Stark），是斯塔克工业（STARK INDUSTRIES）的CEO，因一场阴谋绑架中，胸部遭弹片穿入，生命危在旦夕，为了挽救自己的性命，在同被绑架的物理学家何·银森（Ho Yinsen）的协助下托尼制造方舟反应炉（Arc Reactor）从而逃过一劫，利用方舟反应炉作为能量运转的来源，暗中制造了一套装甲（Mark1）杀出重围后逃脱，后参与并创立复仇者联盟。"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</ScrollView>

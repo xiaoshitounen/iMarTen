@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">iMarTen</string>
+
+    <string-array name="title">
+        <item>网格布局</item>
+        <item>瀑布布局</item>
+    </string-array>
+</resources>

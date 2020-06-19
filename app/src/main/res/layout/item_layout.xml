@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <swu.xl.imarten.SelfView.XLImageView
+            android:id="@+id/icon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/e_name"
+            android:layout_below="@id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英文名"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/name_card"
+            android:layout_marginTop="20dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/e_name"
+            app:cardBackgroundColor="#307DF0"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="12dp"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/c_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="中文名"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/name_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="《奇异博士》也是一部由美国漫画改编而成的电影，尽管他不像X战警和蜘蛛侠那么有名，但也是个身怀超能力的英雄。影片讲述了身为外科医生的他，当初因为一场事故而双手不能再准确的掌控手术刀。在听说西藏附近的山里有一位高人，或许能治愈自己的病后，他马上前往该地。在发生了一系列稀奇古怪的事后，他不仅被治愈，而且还拥有了超能力，从此开始为民除害，与恶势力作斗争。"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
