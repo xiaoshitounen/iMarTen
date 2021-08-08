@@ -1,6 +1,6 @@
 # iMarTen
 
-博客参考：[Android项目14：iMarTen](https://fanandjiu.com/Android%E9%A1%B9%E7%9B%AE14%EF%BC%9AiMarTen/)
+博客参考：[Android项目14：iMarTen](http://www.fanandjiu.com/article/cdf12844.html)
 
 运行效果显示：（上述博客中也有运行图片）
 
